@@ -8,4 +8,4 @@ public:
 };
 
 
-void mahasiswa::showNim
+void mahasiswa::showNim 
