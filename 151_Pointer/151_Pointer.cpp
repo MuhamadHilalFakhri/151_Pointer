@@ -9,5 +9,20 @@ public:
 
 
 void mahasiswa::showNim() { //implementasi method diluar class
-	cout << "No Induk = " << nim << end;
+	cout << "No Induk = " << nim << endl;
+}
+
+int main()
+{
+	mahasiswa mhs{ 1 };			//Object mhs
+	mhs.showNim();				//Member Acces Operator
+	
+	mahasiswa& ref = mhs;		//Pointer Reference refMhs
+	ref.nim = 2;				//Member Access Operator
+	mhs.showNim();
+
+	mahasiswa* pMhs = &mhs;		//Pointer Dereference pMhs
+	pMhs->nim = 3;				//Arrow Operator
+	mhs.showNim();
+	return 0;
 }
